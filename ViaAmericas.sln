@@ -8,6 +8,9 @@ EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "2.LinqTest", "2.LinqTest", "{00BA3532-0842-4570-ADCD-670C7168A23F}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "3.SalesDbTest", "3.SalesDbTest", "{E039A26E-2CFA-45DA-BC61-E24838FE558C}"
+	ProjectSection(SolutionItems) = preProject
+		..\..\..\..\..\..\Program Files (x86)\Microsoft SQL Server\MSSQL12.SQLEXPRESS\MSSQL\Backup\ViamericasSales.bak = ..\..\..\..\..\..\Program Files (x86)\Microsoft SQL Server\MSSQL12.SQLEXPRESS\MSSQL\Backup\ViamericasSales.bak
+	EndProjectSection
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConsoleLinq", "ConsoleLinq\ConsoleLinq.csproj", "{A15B183E-EA84-4BBE-BF91-B3F9706A3297}"
 EndProject
@@ -19,11 +22,14 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ViamericasCareers.Data", "V
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ViamericasCareers.Repository", "ViamericasCareers.Repository\ViamericasCareers.Repository.csproj", "{7F626DCB-90F7-4645-9681-EACEED1A0C49}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GeneralTest", "GeneralTest\GeneralTest.csproj", "{21069252-685D-40B8-9C8A-D70F2EAC04E7}"
-EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ViamericasCareers.Application", "ViamericasCareers.Application\ViamericasCareers.Application.csproj", "{94582800-82A5-487D-A8DD-2B42076C83D2}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ViamericasCareers.Core", "ViamericasCareers.Core\ViamericasCareers.Core.csproj", "{8FECCA9E-5BCC-46DD-A243-A6207C328C7A}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "DataBase", "DataBase", "{8B7DBAA0-61ED-4DF6-8CD5-EEE8CCFAD0D8}"
+	ProjectSection(SolutionItems) = preProject
+		..\..\..\..\..\..\Program Files (x86)\Microsoft SQL Server\MSSQL12.SQLEXPRESS\MSSQL\Backup\ViamericasCareers.bak = ..\..\..\..\..\..\Program Files (x86)\Microsoft SQL Server\MSSQL12.SQLEXPRESS\MSSQL\Backup\ViamericasCareers.bak
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -47,10 +53,6 @@ Global
 		{7F626DCB-90F7-4645-9681-EACEED1A0C49}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{7F626DCB-90F7-4645-9681-EACEED1A0C49}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{7F626DCB-90F7-4645-9681-EACEED1A0C49}.Release|Any CPU.Build.0 = Release|Any CPU
-		{21069252-685D-40B8-9C8A-D70F2EAC04E7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{21069252-685D-40B8-9C8A-D70F2EAC04E7}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{21069252-685D-40B8-9C8A-D70F2EAC04E7}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{21069252-685D-40B8-9C8A-D70F2EAC04E7}.Release|Any CPU.Build.0 = Release|Any CPU
 		{94582800-82A5-487D-A8DD-2B42076C83D2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{94582800-82A5-487D-A8DD-2B42076C83D2}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{94582800-82A5-487D-A8DD-2B42076C83D2}.Release|Any CPU.ActiveCfg = Release|Any CPU
@@ -68,9 +70,9 @@ Global
 		{1FA98D0C-AFAA-4F41-BAC5-480C0769F73D} = {5D45FC0C-05F1-48AE-85F0-9C87B5F5C8F0}
 		{CA176D12-EEFD-4986-B46E-FC0A7F56B350} = {5D45FC0C-05F1-48AE-85F0-9C87B5F5C8F0}
 		{7F626DCB-90F7-4645-9681-EACEED1A0C49} = {5D45FC0C-05F1-48AE-85F0-9C87B5F5C8F0}
-		{21069252-685D-40B8-9C8A-D70F2EAC04E7} = {5D45FC0C-05F1-48AE-85F0-9C87B5F5C8F0}
 		{94582800-82A5-487D-A8DD-2B42076C83D2} = {5D45FC0C-05F1-48AE-85F0-9C87B5F5C8F0}
 		{8FECCA9E-5BCC-46DD-A243-A6207C328C7A} = {5D45FC0C-05F1-48AE-85F0-9C87B5F5C8F0}
+		{8B7DBAA0-61ED-4DF6-8CD5-EEE8CCFAD0D8} = {5D45FC0C-05F1-48AE-85F0-9C87B5F5C8F0}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {B7F4DE21-4D80-4C08-949D-ACA559204770}
