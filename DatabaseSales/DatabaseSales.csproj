@@ -35,8 +35,10 @@
     <None Include="App.config" />
     <None Include="Backups\ViamericasSales.bak" />
   </ItemGroup>
+  <ItemGroup />
   <ItemGroup>
-    <Folder Include="Scripts\" />
+    <Content Include="Scripts\Query_SalesBest_3_Clients.sql" />
+    <Content Include="Scripts\Query_SalesPerSellerAndYear.sql" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
