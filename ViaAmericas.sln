@@ -8,9 +8,6 @@ EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "2.LinqTest", "2.LinqTest", "{00BA3532-0842-4570-ADCD-670C7168A23F}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "3.SalesDbTest", "3.SalesDbTest", "{E039A26E-2CFA-45DA-BC61-E24838FE558C}"
-	ProjectSection(SolutionItems) = preProject
-		..\..\..\..\..\..\Program Files (x86)\Microsoft SQL Server\MSSQL12.SQLEXPRESS\MSSQL\Backup\ViamericasSales.bak = ..\..\..\..\..\..\Program Files (x86)\Microsoft SQL Server\MSSQL12.SQLEXPRESS\MSSQL\Backup\ViamericasSales.bak
-	EndProjectSection
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConsoleLinq", "ConsoleLinq\ConsoleLinq.csproj", "{A15B183E-EA84-4BBE-BF91-B3F9706A3297}"
 EndProject
@@ -25,6 +22,8 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ViamericasCareers.Application", "ViamericasCareers.Application\ViamericasCareers.Application.csproj", "{94582800-82A5-487D-A8DD-2B42076C83D2}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ViamericasCareers.Core", "ViamericasCareers.Core\ViamericasCareers.Core.csproj", "{8FECCA9E-5BCC-46DD-A243-A6207C328C7A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DatabaseSales", "DatabaseSales\DatabaseSales.csproj", "{7E9EEEE8-8395-4F78-BF85-E4C66FC57038}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -56,6 +55,10 @@ Global
 		{8FECCA9E-5BCC-46DD-A243-A6207C328C7A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{8FECCA9E-5BCC-46DD-A243-A6207C328C7A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{8FECCA9E-5BCC-46DD-A243-A6207C328C7A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7E9EEEE8-8395-4F78-BF85-E4C66FC57038}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7E9EEEE8-8395-4F78-BF85-E4C66FC57038}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7E9EEEE8-8395-4F78-BF85-E4C66FC57038}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7E9EEEE8-8395-4F78-BF85-E4C66FC57038}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -67,6 +70,7 @@ Global
 		{7F626DCB-90F7-4645-9681-EACEED1A0C49} = {5D45FC0C-05F1-48AE-85F0-9C87B5F5C8F0}
 		{94582800-82A5-487D-A8DD-2B42076C83D2} = {5D45FC0C-05F1-48AE-85F0-9C87B5F5C8F0}
 		{8FECCA9E-5BCC-46DD-A243-A6207C328C7A} = {5D45FC0C-05F1-48AE-85F0-9C87B5F5C8F0}
+		{7E9EEEE8-8395-4F78-BF85-E4C66FC57038} = {E039A26E-2CFA-45DA-BC61-E24838FE558C}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {B7F4DE21-4D80-4C08-949D-ACA559204770}
