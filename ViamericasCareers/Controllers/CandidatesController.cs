@@ -42,7 +42,7 @@ namespace ViamericasCareers.Controllers
                 if (ModelState.IsValid)
                 {
                     _canApp.AddCandidate(candidateModel);
-                    return RedirectToAction("Index");
+                    return RedirectToAction("ListCandidates");
                 }
                 else
                 {

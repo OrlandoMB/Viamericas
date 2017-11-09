@@ -4,7 +4,6 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using ViamericasCareers.Core.Models;
-using ViamericasCareers.Repository.UnitOfWork;
 
 namespace ViamericasCareers.Application.Careers
 {
@@ -12,9 +11,9 @@ namespace ViamericasCareers.Application.Careers
     {
         public IEnumerable<JobsModel> ListJobs()
         {
-            using (UnitOfWork _uow = new UnitOfWork())
+            using (ViamericasCareersServices.CareersClient _webClient = new ViamericasCareersServices.CareersClient())
             {
-                return (from job in _uow.JobsRepository.GetAll()
+                return (from job in _webClient.ListJobs()
                         select new JobsModel
                         {
                             Id = job.Id,
@@ -23,5 +22,7 @@ namespace ViamericasCareers.Application.Careers
                         }).ToList();
             }
         }
+
+
     }
 }

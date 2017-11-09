@@ -3,8 +3,9 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using ViamericasCareers.Application.ViamericasCareersServices;
 using ViamericasCareers.Core.Models;
-using ViamericasCareers.Repository.UnitOfWork;
+
 
 namespace ViamericasCareers.Application.Careers
 {
@@ -12,9 +13,9 @@ namespace ViamericasCareers.Application.Careers
     {
         public void AddCandidate(CandidatesModel candidateModel)
         {
-            using (UnitOfWork _uow = new UnitOfWork())
+            using (ViamericasCareersServices.CareersClient _webClient = new ViamericasCareersServices.CareersClient())
             {
-                Data.DataContext.Candidate can = new Data.DataContext.Candidate();
+                DcCandidates can = new DcCandidates();
 
                 can.JobId = candidateModel.JobId;
                 can.CardId = candidateModel.CardId;
@@ -23,27 +24,29 @@ namespace ViamericasCareers.Application.Careers
                 can.LastName = candidateModel.LastName;
                 can.RegDate = DateTime.Now;
 
-                _uow.CandidatesRepository.Insert(can);
-                _uow.Save();
+                _webClient.AddCandidate(can);
             }
         }
 
+
         public List<CandidatesModel> ListCandidates()
         {
-            using (UnitOfWork _uow = new UnitOfWork())
+            using (ViamericasCareersServices.CareersClient _webServices = new ViamericasCareersServices.CareersClient())
             {
-                return (from can in _uow.CandidatesRepository.GetAll()
+
+                return (from can in _webServices.CandidatesList()
                         select new CandidatesModel
                         {
                             CardId = can.CardId,
                             City = can.City,
                             FirstName = can.FirstName,
                             Id = can.Id,
-                            JobDescription = _uow.JobsRepository.GetById(can.JobId).Title,
+                            JobDescription = can.JobDescription,
                             LastName = can.LastName,
                             RegDate = can.RegDate
                         }).ToList();
             }
+            
         }
 
     }

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="48e028a1-7d48-432d-900a-b4e7734029e4" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <GenerateTaskBasedAsynchronousMethod>true</GenerateTaskBasedAsynchronousMethod>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings />
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="http://localhost:53009/Careers.svc" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="Careers.disco" MetadataType="Disco" ID="e4c4a4c6-0335-4ec9-9a1f-1f37ac0a983e" SourceId="1" SourceUrl="http://localhost:53009/Careers.svc?disco" />
+    <MetadataFile FileName="Careers.xsd" MetadataType="Schema" ID="bc7ccd46-079f-415c-9100-59be48b68ee2" SourceId="1" SourceUrl="http://localhost:53009/Careers.svc?xsd=xsd0" />
+    <MetadataFile FileName="Careers.wsdl" MetadataType="Wsdl" ID="2ac86d04-6b3e-4c75-b277-54a70ec77249" SourceId="1" SourceUrl="http://localhost:53009/Careers.svc?wsdl" />
+    <MetadataFile FileName="Careers1.xsd" MetadataType="Schema" ID="2b1ed9ae-bb28-48c7-ab40-dfa5b4c525e8" SourceId="1" SourceUrl="http://localhost:53009/Careers.svc?xsd=xsd1" />
+    <MetadataFile FileName="Careers2.xsd" MetadataType="Schema" ID="7617eb4c-3243-4aad-8fc4-c1f8fcc159db" SourceId="1" SourceUrl="http://localhost:53009/Careers.svc?xsd=xsd2" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>

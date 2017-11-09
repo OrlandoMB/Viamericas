@@ -32,6 +32,8 @@
   <ItemGroup>
     <Reference Include="System" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.ServiceModel" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -42,6 +44,11 @@
   <ItemGroup>
     <Compile Include="Careers\CandidatesApplication.cs" />
     <Compile Include="Careers\JobsApplication.cs" />
+    <Compile Include="Connected Services\ViamericasCareersServices\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -49,14 +56,46 @@
       <Project>{8fecca9e-5bcc-46dd-a243-a6207c328c7a}</Project>
       <Name>ViamericasCareers.Core</Name>
     </ProjectReference>
-    <ProjectReference Include="..\ViamericasCareers.Data\ViamericasCareers.Data.csproj">
-      <Project>{ca176d12-eefd-4986-b46e-fc0a7f56b350}</Project>
-      <Name>ViamericasCareers.Data</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\ViamericasCareers.Repository\ViamericasCareers.Repository.csproj">
-      <Project>{7f626dcb-90f7-4645-9681-eaceed1a0c49}</Project>
-      <Name>ViamericasCareers.Repository</Name>
-    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Connected Services\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config" />
+    <None Include="Connected Services\ViamericasCareersServices\Careers.wsdl" />
+    <None Include="Connected Services\ViamericasCareersServices\Careers.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Connected Services\ViamericasCareersServices\Careers1.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Connected Services\ViamericasCareersServices\Careers2.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Connected Services\ViamericasCareersServices\ViamericasCareers.Application.ViamericasCareersServices.DcCandidates.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\ViamericasCareersServices\ViamericasCareers.Application.ViamericasCareersServices.DcJobs.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadataStorage Include="Connected Services\ViamericasCareersServices\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Connected Services\ViamericasCareersServices\Careers.disco" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Connected Services\ViamericasCareersServices\configuration91.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Connected Services\ViamericasCareersServices\configuration.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Connected Services\ViamericasCareersServices\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

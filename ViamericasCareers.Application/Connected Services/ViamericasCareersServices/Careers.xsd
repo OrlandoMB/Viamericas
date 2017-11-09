@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://tempuri.org/" elementFormDefault="qualified" targetNamespace="http://tempuri.org/" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:import schemaLocation="http://localhost:53009/Careers.svc?xsd=xsd2" namespace="http://schemas.datacontract.org/2004/07/ViamericasCareers.WebServices.DataContracts" />
+  <xs:element name="ListJobs">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ListJobsResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q1="http://schemas.datacontract.org/2004/07/ViamericasCareers.WebServices.DataContracts" minOccurs="0" name="ListJobsResult" nillable="true" type="q1:ArrayOfDcJobs" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="CandidatesList">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="CandidatesListResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q2="http://schemas.datacontract.org/2004/07/ViamericasCareers.WebServices.DataContracts" minOccurs="0" name="CandidatesListResult" nillable="true" type="q2:ArrayOfDcCandidates" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="AddCandidate">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q3="http://schemas.datacontract.org/2004/07/ViamericasCareers.WebServices.DataContracts" minOccurs="0" name="newCandidate" nillable="true" type="q3:DcCandidates" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="AddCandidateResponse">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="JobById">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="jobId" type="xs:long" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="JobByIdResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q4="http://schemas.datacontract.org/2004/07/ViamericasCareers.WebServices.DataContracts" minOccurs="0" name="JobByIdResult" nillable="true" type="q4:DcJobs" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>
